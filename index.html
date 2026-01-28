@@ -257,7 +257,7 @@
 
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
       gap: 24px;
       max-width: 1000px;
       margin: 0 auto;
@@ -330,12 +330,6 @@
       font-size: 0.9rem;
     }
 
-    .pricing-card li::before {
-      content: "✓";
-      color: #22c55e;
-      font-weight: bold;
-    }
-
     .pricing-card .btn {
       width: 100%;
     }
@@ -369,7 +363,7 @@
   <header>
     <div class="container">
       <a href="/" class="logo">
-        <img src="/assets/hc-icon.png" alt="HeftCoder">
+        <img src="/assets/hc-icon.png" alt="HeftCoder Logo" style="border-radius: 8px;">
         <span>HeftCoder</span>
       </a>
       <nav>
@@ -435,7 +429,8 @@
     <section class="pricing" id="pricing">
       <div class="container">
         <h2 style="margin-bottom: 20px;">Simple, Transparent Pricing</h2>
-        <p style="margin-bottom: 80px;">Start building for free. Upgrade when you need more power.</p>
+        <p style="text-align: center; margin-bottom: 80px;">Start building for free. Upgrade when you need more power.
+        </p>
 
         <div class="pricing-grid">
           <div class="pricing-card">
